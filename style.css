@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Lato&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+header figure {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icones {
+    width: 18vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 3s;
+}
+
+.icones img {
+   height: 4vh;
+}
+
+.icones img:hover {
+    transform: translateY(-1.5px);   
+}
+
+.banner {
+    width: 89.4%;
+    cursor: pointer;
+    transition: all 5s;
+}
+
+.banner:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.promocao  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.promocao h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.promocao h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    font-weight: 300;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 79vh;
+}
+
+.box figure {
+    background-color: #5CA720;
+    border-radius: 7px;
+    width: 25vw;
+    height: 47vh;
+    position: relative;
+}
+
+.box img {
+    cursor: pointer;
+    width: 25vw;
+    height: 47vh;
+}
+
+.box img:hover {
+    opacity: 0.6;
+}
+
+figcaption {
+    height: 4vh;  
+    font-weight: 600;
+}
+
+figcaption span {
+    color: #5CA720;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+figure button {
+    background-color: #5CA720;
+    color: #FFF5F5;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 8vw;
+    height: 5vh;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+button:hover {
+    background-color: #512200BD;
+}
+
+footer {
+    background-color: #00000008;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 29vw;
+    line-height: 5vh;
+}
+
+.institucional a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    position: relative;
+}
+
+.institucional a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5CA720;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.institucional a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+form {
+    width: 38vw;
+    height: 20vh;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    font-weight: 600;
+}
+
+form input {
+    width: 25vw;
+    height: 8vh;
+    border-color: #fff5f523;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    font-weight: 540;
+    padding: 0.5rem;
+}
+
+form input:focus {
+    outline: solid 2px #5CA720;
+}
+
+form button {
+    width: 8vw;
+    height: 8vh;
+    background-color: #5CA720;
+    color: #FFFFFF;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.redesEcartoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 14vw;
+    transition: 3s;
+}
+
+.redes a:hover {
+    transform: translateY(-1.5px);
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+}
+
+@media (max-width: 480px) {
+    
+    header div {
+        height: 25vh;
+        width: 100vw;
+    }
+
+    header div figure {
+        width: 30vw;
+    }
+
+    .icones {
+        width: 30vw;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner img {
+        width: 99vw;
+        height: 40vh;
+    }
+
+    .promocao  {
+        width: 100vw;
+        height: 17vh;
+    }
+
+    .promocao h2 {
+        font-size: 1.4rem;
+        width: 55vw;
+    }
+
+    .promocao h3 {
+        width: 35vw;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100vw;
+        height: 103rem;
+    }
+
+    .box figure {
+        width: 75vw;
+        height: 60vh;
+    }
+
+    .box figure img {
+        width: 75vw;
+        height: 60vh;
+    }
+    .box figcaption {
+        width: 40vw;
+        height: 5vh;
+    }
+
+    figure button {
+        width: 20vw;
+        height: 6vh;
+        border-radius: 50px;
+    }
+
+    footer {
+        width: 100vw;
+        height: 85vh;
+    }
+
+    
+    .navEform {
+        width: 100vw;
+        display: block;
+    }
+
+    .institucional {
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    form {
+        width: 90vw;
+        height: 20vh;
+        margin: 2rem;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 65vw;
+        height: 8vh;
+    }
+
+    form button {
+        width: 20vw;
+    }
+    
+    .redesEcartoes {
+        width: 100vw;
+    }
+
+    .redes {
+        width: 30vw;
+    }
+
+    .cartoes {
+        width: 47vw;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+   
+    header div {
+        height: 25vh;
+        width: 100vw;
+    }
+
+    header div figure {
+        width: 30vw;
+    }
+
+    .icones {
+        width: 35vw;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner img {
+        width: 99vw;
+        height: 40vh;
+    }
+
+    .promocao  {
+        width: 100vw;
+        height: 17vh;
+    }
+
+    .promocao h2 {
+        font-size: 1.4rem;
+        width: 50vw;
+    }
+
+    .promocao h3 {
+        width: 35vw;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100vw;
+        height: 133rem;
+    }
+
+    .box figure {
+        width: 77vw;
+        height: 55vh;
+    }
+
+    .box figure img {
+        width: 77vw;
+        height: 55vh;
+    }
+    .box figcaption {
+        height: 5vh;
+    }
+
+    figure button {
+        width: 20vw;
+        height: 6vh;
+        border-radius: 35px;
+    }
+
+    footer {
+        width: 100vw;
+        display: block;
+    }
+
+    .institucional {
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    form {
+        width: 90vw;
+        height: 20vh;
+        margin: 2rem;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 65vw;
+        height: 8vh;
+    }
+
+    form button {
+        width: 20vw;
+        height: 8vh;
+    }
+
+    .navEform {
+        width: 100vw;
+        display: block;
+    }
+
+    .institucional {
+        width: 70vw;
+        flex-direction: column;
+    }
+
+    form {
+        width: 90vw;
+        height: 20vh;
+        margin: 2rem;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 65vw;
+        height: 8vh;
+    }
+
+    form button {
+        width: 20vw;
+    }
+
+    .redesEcartoes {
+        width: 99vw;
+    }
+
+    .redes {
+        width: 30vw;
+    }
+
+    .cartoes {
+        width: 48vw;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+
+    header div figure {
+        width: 30vw;
+        height: 10vh;
+    }
+
+    header div figure img {
+        height: 5vh;
+    }
+
+    .icones {
+        width: 35vw;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner img {
+        width: 99vw;
+        height: 40vh;
+    }
+
+    .promocao h2 {
+        font-size: 1.4rem;
+        width: 35vw;
+    }
+
+    .promocao h3 {
+        width: 35vw;
+        font-size: 1.4rem;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100vw;
+        height: 177rem;
+    }
+
+    .box figure {
+        width: 70vw;
+        height: 57vh;
+    }
+
+    .box figure img {
+        width: 70vw;
+        height: 57vh;
+    }
+    .box figcaption {
+        margin-top: 0.3rem;
+        height: 5vh;
+        font-size: 1.5rem;
+    }
+
+    figure button {
+        width: 24vw;
+        height: 6vh;
+        border-radius: 30px;
+        font-size: 1.4rem;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    
+    .navEform {
+        width: 100vw;
+        display: block;
+    }
+
+    .institucional {
+        width: 70vw;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 90vw;
+        height: 20vh;
+        margin: 2rem;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    form input {
+        width: 65vw;
+        height: 8vh;
+        font-size: 1.3rem;
+    }
+
+    form button {
+        width: 20vw;
+        font-size: 1.5rem;
+    }
+
+    .redesEcartoes {
+        width: 99vw;
+    }
+
+    .redes {
+        width: 28vw;
+    }
+
+    .redes img {
+        height: 4vh;
+    }
+
+    .cartoes {
+        width: 45vw;
+    }
+
+    .cartoes img {
+        height: 5vh;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    header div figure {
+        width: 30vw;
+        height: 10vh;
+    }
+
+    header div figure img {
+        height: 6vh;
+    }
+
+    .icones {
+        width: 35vw;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner img {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .promocao h2 {
+        font-size: 2rem;
+        width: 35vw;
+    }
+
+    .promocao h3 {
+        width: 35vw;
+        font-size: 1.9rem;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100vw;
+        height: 230rem;
+    }
+
+    .box figure {
+        width: 75vw;
+        height: 63vh;
+    }
+
+    .box figure img {
+        width: 75vw;
+        height: 63vh;
+    }
+    .box figcaption {
+        margin-top: 0.3rem;
+        height: 5vh;
+        font-size: 1.9rem;
+    }
+
+    figure button {
+        width: 24vw;
+        height: 6vh;
+        border-radius: 30px;
+        font-size: 1.9rem;
+    }
+
+    footer {
+        width: 100vw;
+    }
+
+    .navEform {
+        width: 100vw;
+        display: block;
+    }
+
+    .institucional {
+        width: 70vw;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    form {
+        width: 90vw;
+        height: 20vh;
+        margin: 2.5rem;
+    }
+    
+    form label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    form input {
+        width: 65vw;
+        height: 8vh;
+        font-size: 1.8rem;
+    }
+
+    form button {
+        width: 20vw;
+        font-size: 1.9rem;
+    }
+
+    .redesEcartoes{
+        width: 99.9%;
+    }
+
+    .redes {
+        width: 28vw;
+        height: 6vh;
+    }
+
+    .redes img {
+        height: 5vh;
+    }
+
+    .cartoes {
+        width: 45vw;
+        height: 6vh;
+    }
+
+    .cartoes img {
+        height: 5vh;
+    }
+}
+
