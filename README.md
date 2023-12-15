@@ -27,4 +27,5 @@ O arquivo **index.html** estrutura o conteúdo do site, organizando-o em seçõe
 O projeto utiliza media queries para garantir uma experiência consistente em diferentes dispositivos, ajustando tamanhos de fonte, layout e imagens de acordo com as dimensões da tela.
 
 ## Contato:
-[Linkedin](https://www.linkedin.com/in/michele-costaa/)
+- [Linkedin](https://www.linkedin.com/in/michele-costaa/)
+- [GitHub Pages](https://michelita07.github.io/SelfCare/)
