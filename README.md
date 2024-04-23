@@ -28,4 +28,4 @@ O projeto utiliza media queries para garantir uma experiência consistente em di
 
 ## Contato:
 - [Linkedin](https://www.linkedin.com/in/michele-costaa/)
-- [GitHub Pages](https://michelita07.github.io/SelfCare/)
+- [GitHub Pages](https://Michele-Costaa.github.io/SelfCare/)
